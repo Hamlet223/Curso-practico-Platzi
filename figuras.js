@@ -74,6 +74,19 @@ function areaCirculo(radio) {
 
 console.groupEnd();
 
+//Funcion de la algura de un triangulo isosceles
+function alturaTrianguloI(lado1, lado2, base){
+  if(lado1 != lado2 || lado1 == base){
+    alert("Este no es un triangulo isosceles")
+  }
+  else{
+    const cateto= (base/2) ** 2;
+    const hipotenusa= lado1 **2;
+    const altura= Math.sqrt((hipotenusa - cateto));
+      return alert("La altura de tu triangulo Isosceles es: " + altura)
+   } 
+}
+
 
 // Aquí interactuamos con el HTML
 function calcularPerimetroCuadrado() {
@@ -103,4 +116,55 @@ function calcularPerimetroTriangulo(){
 
   const perimetro = perimetroTriangulo(value1,value2,value3);
   alert("El perimetro del triangulo es: " + perimetro);
+}
+
+//Area Triangulo
+function calcularAreaTriangulo(){
+  const altura= document.getElementById("Altura");
+  const base= document.getElementById("Base");
+  const value3= parseInt(base.value);
+  const value4= parseInt(altura.value);
+
+  const area= areaTriangulo(value3, value4);
+  alert("El area del triangulo es: " + area);
+}
+
+//Diametro Criculo
+function calcularDiametroCirculo(){
+  const radio= document.getElementById("Radio");
+  const value5= parseInt(radio.value);
+
+  const diametro= diametroCirculo(value5);
+  alert("El diametro del circulo es: " + diametro)
+}
+
+//Perimetro Circulo
+function calcularPerimetroCirculo(){
+  const radio= document.getElementById("Radio");
+  const value5= parseInt(radio.value);
+
+  const perimetro= perimetroCirculo(value5);
+  alert("El perimetro de tu circulo es: " + perimetro);
+}
+
+//Area Circulo
+function calcularAreaCirculo(){
+  const radio= document.getElementById("Radio");
+  const value5= parseInt(radio.value);
+
+  const area= areaCirculo(value5);
+  alert("El perimetro de tu circulo es: " + area);
+}
+
+//Triangulo Isosceles y hallar altura 
+function calcularHTriangulo(){
+  const la1= document.getElementById("T1")
+  const la2= document.getElementById("T2")
+  const base= document.getElementById("Base")
+
+  const val1= parseInt(la1.value);
+  const val2= parseInt(la2.value);
+  const val3= parseInt(base.value);
+
+  const alturaI= alturaTrianguloI(val1,val2,val3);
 }
