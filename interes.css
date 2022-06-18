@@ -1,0 +1,39 @@
+*{
+    background: rgba(173, 216, 230, 0.25 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+
+
+h1{
+    text-align: center;
+}
+
+#dinero{
+    position: relative;
+    bottom: 1px;
+    left: 73px;
+    text-align: center;
+}
+    
+
+#cuota{
+    position: relative;
+    left: 10px;
+    text-align: center;
+}
+
+#idDinero{
+    font-weight: bold;
+}
+
+#idCuota{
+    font-weight: bold;
+    
+}
+
+#botonP{
+    font-weight: bolder;
+}

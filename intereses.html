@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="StyleSheet" href="interes.css">
+    <title>Intereses de Prestamo</title>
+    <header> <h1>INTERES POR PRESTAMO</h1>
+    </header>
+
+    <section id="Cuadro">
+        <h2>El interes cambiar de acuerdo al numero de cuotas</h2>
+        <form>
+            <label for="InputDinero" id="idDinero">
+                Escribe el monto a solicitar
+            </label>
+            <input id="dinero" type="number" placeholder="Dinero"/>
+            <nav>
+                <label for="InputCuotas" id="idCuota">
+                    Escribe el numero de cuotas a pagar
+                </label>
+                <input id="cuota" type="number" placeholder="Cuotas"/>
+            </nav>
+        </form>
+    </section>
+    <div>
+        <button id="botonP" type="button" onclick="calcularPrestamo()">Calcular Prestamo</button>
+    </div>
+    <p id="resultado"></p>
+    <script src="./intereses.js"></script>
+</head>
+<body>
+    
+</body>
+</html>
